@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (5.4.3)
+  - AllowX (1.1.2):
+    - SwiftEntryKit (= 1.2.3)
+  - IQKeyboardManagerSwift (6.5.6)
+  - JGProgressHUD (2.2)
+  - Kingfisher (7.1.1)
+  - lottie-ios (3.2.3)
+  - QuickLayout (3.0.0)
+  - R.swift (5.4.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - Resolver (1.4.3)
+  - SkeletonView (1.21.2)
+  - SwiftEntryKit (1.2.3):
+    - QuickLayout (= 3.0.0)
+  - SwiftLint (0.43.1)
+
+DEPENDENCIES:
+  - Alamofire (= 5.4.3)
+  - AllowX (= 1.1.2)
+  - IQKeyboardManagerSwift (= 6.5.6)
+  - JGProgressHUD (= 2.2)
+  - Kingfisher (= 7.1.1)
+  - lottie-ios (= 3.2.3)
+  - R.swift (= 5.4.0)
+  - Resolver (= 1.4.3)
+  - SkeletonView (= 1.21.2)
+  - SwiftLint (= 0.43.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AllowX
+    - IQKeyboardManagerSwift
+    - JGProgressHUD
+    - Kingfisher
+    - lottie-ios
+    - QuickLayout
+    - R.swift
+    - R.swift.Library
+    - Resolver
+    - SkeletonView
+    - SwiftEntryKit
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  AllowX: 1c741ee0d66de4707e53114aa0ccb558db3ce4c3
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  Kingfisher: f738f9c4a3415823b8e2985d10aa2d6a9f37bc4d
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
+  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  Resolver: c0956ef605a64f63458166653fa4ef71df5acd98
+  SkeletonView: a085533443fed0198309f1979780afb6e80eaedd
+  SwiftEntryKit: 340713c2e4a6662c5149629990bf1088bf5f0389
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+
+PODFILE CHECKSUM: b5ee904b283f91db72dc07e2f9dd5c7226a84d72
+
+COCOAPODS: 1.11.2
