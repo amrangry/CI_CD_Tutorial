@@ -1,6 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '12.0'
 
+#source 'https://github.com/CocoaPods/Specs.git' Or better >> install! 'cocoapods', :warn_for_unused_master_specs_repo => false
+#for >> [!] Your project does not explicitly specify the CocoaPods master specs repo. Since CDN is now used as the default, you may safely remove it from your repos directory via `pod repo remove master`. To suppress this warning please add `warn_for_unused_master_specs_repo => false` to your Podfile.
+#source 'https://github.com/CocoaPods/Specs.git'
+install! 'cocoapods', :warn_for_unused_master_specs_repo => false
+
 target 'CI_CD_Tutorial' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
@@ -22,6 +27,8 @@ target 'CI_CD_Tutorial' do
 
 end
 
+
+  ## Delete Modify target for warning
 post_install do |pi|
    pi.pods_project.targets.each do |t|
        t.build_configurations.each do |bc|
@@ -31,3 +38,12 @@ post_install do |pi|
        end
    end
 end
+
+  ## Delete target 
+  # post_install do |installer|
+  #   installer.pods_project.targets.each do |target|
+  #     target.build_configurations.each do |config|
+  #       config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+  #     end
+  #   end
+  # end
