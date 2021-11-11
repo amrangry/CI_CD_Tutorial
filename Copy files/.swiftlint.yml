@@ -1,0 +1,79 @@
+#$SRCROOT/BuildPhasesScripts/SwiftLintRunScript.sh
+# //swiftlint:disable:next type_body_length
+
+identifier_name:
+ min_length: 2 # only warning
+ max_length: 50 # warning and error
+ warning: 40
+ error: 50
+ excluded: # excluded via string array
+  - id
+  - URL
+  - GlobalAPIKey
+  - by
+  - vc
+  - en
+  - ar
+  - to
+  - ad
+
+type_name:
+  min_length: 2 # only warning
+  max_length: # warning and error
+  warning: 40
+  error: 50
+  excluded:
+    - iProjectUITests
+    - iProjectTests
+    
+line_length: 200
+
+force_cast: warning # implicitly
+
+force_try:
+  severity: warning # explicitly
+  
+# they can set both implicitly with an array
+type_body_length:
+    - 300 # warning
+    - 400 # error
+    
+file_length:
+    warning: 999
+    error: 1200
+
+custom_rules:
+  rule_id:
+    included: Source/SwiftLintFramework/Rules/\w+\.swift
+    name: Rule ID
+    message: Rule IDs must be all lowercase, snake case and not end with `rule`
+    regex: identifier:\s*("\w+_rule"|"\S*[^a-z_]\S*")
+    severity: error
+    
+file_name:
+  excluded:
+    - main.swift
+    
+nesting:
+  type_level:
+    warning: 3 --> this means the warning appears if you nest 3 level deep instead of 1
+    error: 6
+  statement_level:
+    warning: 5
+    error: 10
+    
+disabled_rules: # rule identifiers to exclude from running
+#  - line_length
+#  - large_tuple
+#  - identifier_name
+#  - control_statement
+   - trailing_whitespace
+opt_in_rules: # some rules are only opt-in
+ - empty_count
+ - missing_docs
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+ - Pods
+ - MotoShop/Helper/TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m
+ - BookStore/CWRateKit
+#- PRojectDirectoryName/LibFolder
+#- PRojectDirectoryName/LibFolder/exmpleFile.swift

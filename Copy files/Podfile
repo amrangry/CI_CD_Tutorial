@@ -1,0 +1,52 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.6'
+
+target 'BookStore' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for BookStore
+  
+  # CodeSmell
+  pod 'SwiftLint', '~> 0.39.2' , :inhibit_warnings => true
+
+  # KeyBoard
+  pod 'IQKeyboardManagerSwift' , '~> 6.5.6' , :inhibit_warnings => true
+  
+  # Network
+  pod 'Alamofire' , '~> 5.2.2' , :inhibit_warnings => true #5.2.1
+  pod 'Kingfisher' , '~> 5.14.1' , :inhibit_warnings => true #5.14.0
+  pod 'ReachabilitySwift' , '~> 5.0.0' , :inhibit_warnings => true
+  
+  # Secure layers
+  #pod 'KeychainSwift', '~> 14.0' , :inhibit_warnings => true
+  pod 'KeychainSwift', '~> 19.0' , :inhibit_warnings => true
+  
+  # UI
+  pod 'RAMAnimatedTabBarController' , :inhibit_warnings => true #5.2.0
+  pod 'FloatRatingView', :git => 'https://github.com/amrangry/FloatRatingView.git', :inhibit_warnings => true
+  pod 'MGStarRatingView', :git => 'https://github.com/amrangry/MGStarRatingView.git', :inhibit_warnings => true
+  pod 'AnimatedField', '~> 2.4.4', :inhibit_warnings => true
+  pod 'Loaf', '~> 0.7.0', :inhibit_warnings => true
+  #pod 'CWRateKit', :git => 'https://github.com/amrangry/CWRateKit.git' , :inhibit_warnings => true
+  #pod 'Charts', '~> 3.4.0' , :inhibit_warnings => true
+  #pod 'SwiftyMenu', :inhibit_warnings => true
+  #pod 'SwiftyMenu', :git => 'https://github.com/amrangry/SwiftyMenu.git', :branch => 'feature/generic_datasource' , :inhibit_warnings => true
+  #pod 'BadgeHub', :inhibit_warnings => true
+  #pod 'BadgeHub', :git => 'https://github.com/amrangry/BadgeHub.git',  :branch => 'hotfix/func_access_modifier', :inhibit_warnings => true
+  
+  # Loader
+  #pod 'NVActivityIndicatorView' , '~> 4.7.0' , :inhibit_warnings => true #hint: using for loader
+  pod 'SVProgressHUD' , :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git' , :inhibit_warnings => true #SVProgressHUD (2.2.6)
+  pod "KRProgressHUD" , '~> 3.4.6', :inhibit_warnings => true #3.4.5 #https://github.com/krimpedance/KRProgressHUD
+  
+  # Helper
+  pod 'ClockWise', '~> 1.2.3', :inhibit_warnings => true
+#  pod 'SwiftSVG'
+  pod 'PocketSVG'
+  
+  #social
+  #pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  #pod 'TwitterKit'
+end
