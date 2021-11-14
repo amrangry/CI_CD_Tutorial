@@ -11,19 +11,19 @@ target 'CI_CD_Tutorial' do
   use_frameworks!
 
   # Pods for CI_CD_Tutorial
-  pod 'SkeletonView', '1.21.2'
-  pod 'AllowX', '1.1.2'
-  pod 'R.swift', '5.4.0'
-  pod 'Alamofire', '5.4.3'
-  pod 'IQKeyboardManagerSwift', '6.5.6'
+  #pod 'SkeletonView', '1.21.2'
+  #pod 'AllowX', '1.1.2'
+  #pod 'R.swift', '5.4.0'
+  #pod 'Alamofire', '5.4.3'
+  #pod 'IQKeyboardManagerSwift', '6.5.6'
   pod 'SwiftLint', '0.43.1'
   #pod 'Firebase/Auth', '8.5.0'
   #pod 'Firebase/Analytics', '8.5.0'
   #pod 'Firebase/Firestore', '8.5.0'
-  pod 'lottie-ios', '3.2.3'
+  #pod 'lottie-ios', '3.2.3'
   pod 'Resolver', '1.4.3'
-  pod 'JGProgressHUD', '2.2'
-  pod 'Kingfisher', '7.1.1'
+  #pod 'JGProgressHUD', '2.2'
+  #pod 'Kingfisher', '7.1.1'
 
 end
 
